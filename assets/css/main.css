@@ -6828,6 +6828,14 @@ input.main-search-input::placeholder {
     min-height: auto;        
 }
 
+.service-icon i {
+    color: #FA6444;
+    transition: color 0.3s ease;
+}
+
+.service-box-items:hover .service-icon i {
+    color: white !important;
+}
 /*--------------------------------------------------------------
 >>> TEMPLATE SECTION STYLES END
 --------------------------------------------------------------*/
