@@ -1065,7 +1065,7 @@ span {
   color: var(--black);
 }
 .contact-wrapper .contact-box-items {
-  padding: 38px;
+  padding: 48px;
   border-radius: 16px 16px 16px 0;
   position: relative;
   z-index: 9;
@@ -6812,6 +6812,21 @@ input.main-search-input::placeholder {
   color: var(--white);
 }
 
+.contact-section {
+    position: relative;
+    z-index: 5;             
+    margin-bottom: 60px;      
+}
+
+.marque-section {
+    margin-top: -40px;        
+    z-index: 10;               
+    position: relative;
+}
+
+.contact-box-items {
+    min-height: auto;        
+}
 /*--------------------------------------------------------------
 >>> TEMPLATE SECTION STYLES END
 --------------------------------------------------------------*/
