@@ -1065,7 +1065,7 @@ span {
   color: var(--black);
 }
 .contact-wrapper .contact-box-items {
-  padding: 48px;
+  padding: 38px;
   border-radius: 16px 16px 16px 0;
   position: relative;
   z-index: 9;
