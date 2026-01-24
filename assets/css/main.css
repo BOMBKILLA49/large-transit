@@ -6827,6 +6827,21 @@ input.main-search-input::placeholder {
 .contact-box-items {
     min-height: auto;        
 }
+
+.service-icon img {
+    width: 48px;               /* or 32px, 40px — adjust to match your design */
+    height: 48px;
+    object-fit: contain;
+    display: block;
+    margin: 0 auto 15px;       /* centers it and adds space below */
+    opacity: 1 !important;
+    filter: none !important;
+}
+
+.swiper-slide-active .service-icon img,
+.service-icon img {
+    opacity: 1 !important;
+}
 /*--------------------------------------------------------------
 >>> TEMPLATE SECTION STYLES END
 --------------------------------------------------------------*/
