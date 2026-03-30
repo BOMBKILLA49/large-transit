@@ -928,5 +928,49 @@
         <script src="assets/js/wow.min.js"></script>
         <!--<< Main.js >>-->
         <script src="assets/js/main.js"></script>
+    <!-- Google Places Autocomplete Script - Add this BEFORE main.js -->
+<script src="https://maps.googleapis.com/maps/api/js?key=YOUR_GOOGLE_API_KEY&libraries=places" async defer></script>
+
+<!-- Your custom Google Autocomplete Initialization -->
+<script>
+    function initAutocomplete() {
+        const options = {
+            types: ['(cities)'],                    // Suggests cities
+            componentRestrictions: { country: "us" } // Limits to United States (remove this line if you want worldwide)
+        };
+
+        // From Location
+        const fromInput = document.getElementById("from-location");
+        if (fromInput) {
+            new google.maps.places.Autocomplete(fromInput, options);
+        }
+
+        // To Location
+        const toInput = document.getElementById("to-location");
+        if (toInput) {
+            new google.maps.places.Autocomplete(toInput, options);
+        }
+    }
+
+    // Run when Google script is loaded
+    window.initAutocomplete = initAutocomplete;
+</script>
+
+<!-- Existing scripts from your template -->
+<script src="assets/js/jquery-3.7.1.min.js"></script>
+<script src="assets/js/viewport.jquery.js"></script>
+<script src="assets/js/bootstrap.bundle.min.js"></script>
+<script src="assets/js/jquery.nice-select.min.js"></script>
+<script src="assets/js/jquery.waypoints.js"></script>
+<script src="assets/js/jquery.counterup.min.js"></script>
+<script src="assets/js/swiper-bundle.min.js"></script>
+<script src="assets/js/jquery.meanmenu.min.js"></script>
+<script src="assets/js/parallaxie.js"></script>
+<script src="assets/js/jquery.magnific-popup.min.js"></script>
+<script src="assets/js/ion.rangeSlider.min.js"></script>
+<script src="assets/js/wow.min.js"></script>
+
+<!-- Main.js - Your template's main script (load it last) -->
+<script src="assets/js/main.js"></script>
     </body>
 </html>
